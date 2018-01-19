@@ -1,6 +1,8 @@
 <div class="container">
   <header>
-    <h1>{{title}}</h1>
+    <div class="logoArea">
+      <img src="./../assets/zoo.png" alt="Zoo Logo">
+    </div>
   </header>
   <section class="main">
     <app-directory [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></app-directory>

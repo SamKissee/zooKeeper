@@ -1,15 +1,15 @@
 <div class="form-group" *ngIf="childSelectedAnimal">
   <div>
     <label> Edit Animal Data</label>
-    <input class="form-control" name="name" [(ngModel)]="childSelectedAnimal.Name">
-    <input class="form-control" name="species" [(ngModel)]="childSelectedAnimal.Species">
-    <input class="form-control" name="age" [(ngModel)]="childSelectedAnimal.Age">
-    <input class="form-control" name="diet" [(ngModel)]="childSelectedAnimal.Diet">
-    <input class="form-control" name="location" [(ngModel)]="childSelectedAnimal.Location">
-    <input class="form-control" name="caretakers" [(ngModel)]="childSelectedAnimal.Caretakers">
-    <input class="form-control" name="sex" [(ngModel)]="childSelectedAnimal.Sex">
-    <input class="form-control" name="likes" [(ngModel)]="childSelectedAnimal.Likes">
-    <input class="form-control" name="dislikes" [(ngModel)]="childSelectedAnimal.Dislikes">
+    <input class="form-control" name="name" [(ngModel)]="childSelectedAnimal.name">
+    <input class="form-control" name="species" [(ngModel)]="childSelectedAnimal.species">
+    <input class="form-control" name="age" [(ngModel)]="childSelectedAnimal.age">
+    <input class="form-control" name="diet" [(ngModel)]="childSelectedAnimal.diet">
+    <input class="form-control" name="location" [(ngModel)]="childSelectedAnimal.location">
+    <input class="form-control" name="caretakers" [(ngModel)]="childSelectedAnimal.caretakers">
+    <input class="form-control" name="sex" [(ngModel)]="childSelectedAnimal.sex">
+    <input class="form-control" name="likes" [(ngModel)]="childSelectedAnimal.likes">
+    <input class="form-control" name="dislikes" [(ngModel)]="childSelectedAnimal.dislikes">
 
     <button class="btn btn-info" (click)="doneClicked()">Finished Editing</button>
   </div>
