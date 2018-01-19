@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal } from './../animal.model';
-import { HttpService } from './http.service'
+import { HttpService } from './http.service';
+declare var firebase: any;
 
 @Component({
   selector: 'app-root',
@@ -13,12 +14,15 @@ export class AppComponent {
 
   constructor(private httpService: HttpService){}
 
-  masterAnimalList;
+  masterAnimalList = [];
 
   ngOnInit(){
-    this.httpService.fetchAnimals().subscribe(
-      (animals) => this.masterAnimalList.push(animals)
-    );
-    console.log(this.masterAnimalList)
+    this.fbGetAnimals();
+  }
+
+  fbGetAnimals(){
+    firebase.database().ref('/').on('child_added',
+    (snapshot) => this.masterAnimalList.push(snapshot.val())
+    )
   }
 }

@@ -10,5 +10,19 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDlZVS4GPjN0LGlDiKUq9LaeaufkJWu48Y",
+      authDomain: "epi-zoo-keeper.firebaseapp.com",
+      databaseURL: "https://epi-zoo-keeper.firebaseio.com",
+      projectId: "epi-zoo-keeper",
+      storageBucket: "epi-zoo-keeper.appspot.com",
+      messagingSenderId: "138427741477"
+    };
+    firebase.initializeApp(config);
+  </script>  
 </body>
 </html>

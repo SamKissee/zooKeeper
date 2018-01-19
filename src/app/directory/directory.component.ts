@@ -7,13 +7,12 @@ import { Animal } from '../../animal.model'
   styleUrls: ['./directory.component.scss']
 })
 export class DirectoryComponent implements OnInit {
-  
-  @Input() childAnimalList: Animal[];
+
+  @Input() childAnimalList;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.childAnimalList)
   }
 
 }
