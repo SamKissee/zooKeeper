@@ -1,6 +1,6 @@
 <div class="form-group" *ngIf="childSelectedAnimal">
-  <div>
-    <label> Edit Animal Data</label>
+  <div class="editForm">
+    <h3> Edit Animal Data</h3>
     <input class="form-control" name="name" [(ngModel)]="childSelectedAnimal.name">
     <input class="form-control" name="species" [(ngModel)]="childSelectedAnimal.species">
     <input class="form-control" name="age" [(ngModel)]="childSelectedAnimal.age">
