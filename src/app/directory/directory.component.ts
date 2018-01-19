@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal } from '../../animal.model'
 
 @Component({
   selector: 'app-directory',
