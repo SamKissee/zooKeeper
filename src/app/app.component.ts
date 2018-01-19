@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Animal } from './../animal.model';
+import { HttpService } from './http.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [ HttpService ]
 })
 export class AppComponent {
   title = 'Zoo Keeper';
+
+  constructor(private httpService: HttpService){}
+
+  masterAnimalList:any =  [];
+
+  ngOnInit(){
+    this.httpService.fetchAnimals().subscribe(
+      (animals) => this.masterAnimalList = animals
+    );
+  }
 }
