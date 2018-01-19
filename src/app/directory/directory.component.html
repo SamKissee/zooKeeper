@@ -1,13 +1,16 @@
-<select (change)="onChange($event.target.value)">
-  <option value="all" selected="selected">All Animals</option>
-  <option value="underTwo">2 Years Old and Younger</option>
-  <option value="overTwo">3 Years Old and Older</option>
-</select>
+<h3>Filter Our Friends</h3>
+<div class="selectArea">
+  <select (change)="onChange($event.target.value)">
+    <option value="all" selected="selected">All Animals</option>
+    <option value="underTwo">2 Years Old and Younger</option>
+    <option value="overTwo">3 Years Old and Older</option>
+  </select>
+</div>
 
 <div class="row">
-  <div *ngFor="let animal of childAnimalList | ageSort:filterByAge " class="col-12 col-sm-6 col-md-4">
+  <div *ngFor="let animal of childAnimalList | ageSort:filterByAge " class="col-12 col-sm-6 col-md-4 mainCard">
     <div class="animalCard">
-      <h3>Name: {{animal.name}}</h3>
+      <h3>{{animal.name | uppercase}}</h3>
       <p>Species: {{animal.species}}</p>
       <p>Age: {{animal.age}}</p>
       <p>Diet: {{animal.diet}}</p>
