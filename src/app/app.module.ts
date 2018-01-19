@@ -4,11 +4,13 @@ import { AlertModule } from 'ngx-bootstrap';
 
 
 import { AppComponent } from './app.component';
+import { DirectoryComponent } from './directory/directory.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule,
