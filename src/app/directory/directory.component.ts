@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../../animal.model'
 
 @Component({
@@ -7,10 +7,13 @@ import { Animal } from '../../animal.model'
   styleUrls: ['./directory.component.scss']
 })
 export class DirectoryComponent implements OnInit {
+  
+  @Input() childAnimalList: Animal[];
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.childAnimalList)
   }
 
 }

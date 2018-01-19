@@ -13,11 +13,12 @@ export class AppComponent {
 
   constructor(private httpService: HttpService){}
 
-  masterAnimalList:any =  [];
+  masterAnimalList;
 
   ngOnInit(){
     this.httpService.fetchAnimals().subscribe(
-      (animals) => this.masterAnimalList = animals
+      (animals) => this.masterAnimalList.push(animals)
     );
+    console.log(this.masterAnimalList)
   }
 }

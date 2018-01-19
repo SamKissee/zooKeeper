@@ -1,3 +1,15 @@
-<p>
-  directory works!
-</p>
+<div class="row">
+  <div *ngFor="let animal of childAnimalList" class="col-12 col-sm-6 col-md-4">
+    <div class="animalCard">
+      <h3>{{animal.name}}</h3>
+      <p>{{animal.species}}</p>
+      <p>{{animal.age}}</p>
+      <p>{{animal.diet}}</p>
+      <p>{{animal.location}}</p>
+      <p>{{animal.caretakers}}</p>
+      <p>{{animal.sex}}</p>
+      <p>{{animal.likes}}</p>
+      <p>{{animal.dislikes}}</p>
+    </div>
+  </div>
+</div>
