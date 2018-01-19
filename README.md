@@ -1,27 +1,44 @@
+# Epicodus WEEK 3 JS
+
 # ZooKeeper
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### This project shows my ability to write and format code along the lines of HTML, SCSS, JS, Angular, Node 1/19/2018_
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### By Sam Kissee
 
-## Build
+## Project Plan
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+I will create the project by:
+  * I will create a model file to the for the structure of the animal class
+  * I will begin the project with the list of animals in a json file which I will grab info from via a Http Service
+  * I will make 3 components which will connect via a root level.
+    * Directory
+    * Edit animals
+    * New animals
+  * I will make custom filter pipes
+  * I will move animals json to firebase to allow animals to be kept on page
 
-## Running unit tests
+## Setup
+You will need your own api key for this method to work.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_Enter The Following Commands in Terminal_
+ * cd desktop
+ * git clone https://github.com/SamKissee/ZooKeeper ZooKeeper
+ * cd zooKeeper
+ * npm install
+ * bower install
+ * atom .
+ * ng build
+ * ng serve --open
 
-## Running end-to-end tests
+ _Or Follow this Link_ https://samkissee.github.io/zooKeeper/
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ ## Bugs
+ _No Known Bugs_
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ ## Languages
+ _HTML,CSS, JS, NODE.js, Angular_
