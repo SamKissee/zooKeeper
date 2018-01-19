@@ -6,13 +6,15 @@ import { AlertModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { AddAnimalComponent } from './add-animal/add-animal.component';
+import { EditAnimalComponent } from './edit-animal/edit-animal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectoryComponent,
-    AddAnimalComponent
+    AddAnimalComponent,
+    EditAnimalComponent
   ],
   imports: [
     BrowserModule,
