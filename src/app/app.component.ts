@@ -25,4 +25,13 @@ export class AppComponent {
     (snapshot) => this.masterAnimalList.push(snapshot.val())
     )
   }
+
+  selectedAnimal = null;
+  editAnimal(clickedAnimal){
+    this.selectedAnimal = clickedAnimal
+  }
+  doneEdit(){
+    this.selectedAnimal = null;
+  }
+
 }
