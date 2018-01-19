@@ -1,15 +1,21 @@
+<select (change)="onChange($event.target.value)">
+  <option value="all" selected="selected">All Animals</option>
+  <option value="underTwo">2 Years Old and Younger</option>
+  <option value="overTwo">3 Years Old and Older</option>
+</select>
+
 <div class="row">
-  <div *ngFor="let animal of childAnimalList" class="col-12 col-sm-6 col-md-4">
+  <div *ngFor="let animal of childAnimalList | ageSort:filterByAge " class="col-12 col-sm-6 col-md-4">
     <div class="animalCard">
-      <h3>Name: {{animal.Name}}</h3>
-      <p>Species: {{animal.Species}}</p>
-      <p>Age: {{animal.Age}}</p>
-      <p>Diet: {{animal.Diet}}</p>
-      <p>Location: {{animal.Location}}</p>
-      <p>Caretakers: {{animal.Caretakers}}</p>
-      <p>Sex: {{animal.Sex}}</p>
-      <p>Likes: {{animal.Likes}}</p>
-      <p>Dislikes: {{animal.Dislikes}}</p>
+      <h3>Name: {{animal.name}}</h3>
+      <p>Species: {{animal.species}}</p>
+      <p>Age: {{animal.age}}</p>
+      <p>Diet: {{animal.diet}}</p>
+      <p>Location: {{animal.location}}</p>
+      <p>Caretakers: {{animal.caretakers}}</p>
+      <p>Sex: {{animal.sex}}</p>
+      <p>Likes: {{animal.likes}}</p>
+      <p>Dislikes: {{animal.dislikes}}</p>
 
       <button class="btn btn-info" (click)="editButton1(animal)">Edit Animal Info</button>
     </div>

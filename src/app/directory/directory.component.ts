@@ -11,10 +11,16 @@ export class DirectoryComponent implements OnInit {
   @Input() childAnimalList;
   @Output() clickSender = new EventEmitter();
 
+  filterByAge: string = "all";
+
+  onChange(menuOption){
+    this.filterByAge = menuOption;
+  }
+
   editButton1(animalToEdit: Animal){
     this.clickSender.emit(animalToEdit)
   }
-  
+
   constructor() { }
 
   ngOnInit() {
