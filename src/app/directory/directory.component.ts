@@ -9,7 +9,12 @@ import { Animal } from '../../animal.model'
 export class DirectoryComponent implements OnInit {
 
   @Input() childAnimalList;
+  @Output() clickSender = new EventEmitter();
 
+  editButton1(animalToEdit: Animal){
+    this.clickSender.emit(animalToEdit)
+  }
+  
   constructor() { }
 
   ngOnInit() {
