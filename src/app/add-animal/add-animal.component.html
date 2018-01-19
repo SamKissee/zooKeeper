@@ -1,3 +1,14 @@
-<p>
-  add-animal works!
-</p>
+<div class="form-group">
+  <label>Add Another Friend!</label>
+  <input class="form-control" placeholder="Name" name="name" [(ngModel)]="name">
+  <input class="form-control" placeholder="Species" name="species" [(ngModel)]="species">
+  <input class="form-control" placeholder="Age" name="age" [(ngModel)]="age">
+  <input class="form-control" placeholder="Diet" name="diet" [(ngModel)]="diet">
+  <input class="form-control" placeholder="Location" name="location" [(ngModel)]="location">
+  <input class="form-control" placeholder="Caretakers" name="caretakers" [(ngModel)]="caretakers">
+  <input class="form-control" placeholder="Sex" name="sex" [(ngModel)]="sex">
+  <input class="form-control" placeholder="Likes" name="likes" [(ngModel)]="likes">
+  <input class="form-control" placeholder="Dislikes" name="dislikes" [(ngModel)]="dislikes">
+
+  <button class="btn btn-info" (click)="fbAddAnimal(name, species, age, diet, location, caretakers, sex, likes, dislikes)">Add New Animal</button>
+</div>

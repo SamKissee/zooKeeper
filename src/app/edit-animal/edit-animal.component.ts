@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../../animal.model'
 
 @Component({
@@ -7,7 +7,12 @@ import { Animal } from '../../animal.model'
   styleUrls: ['./edit-animal.component.scss']
 })
 export class EditAnimalComponent implements OnInit {
+  @Input() childSelectedAnimal: Animal;
+  @Output() doneClickSender = new EventEmitter();
 
+  doneClicked(){
+    this.doneClickSender.emit();
+  }
   constructor() { }
 
   ngOnInit() {
